@@ -1,0 +1,335 @@
+/* transitions */
+
+.main-menu-wrapper
+	transition: left ease .4s
+.page-wrap
+	position: relative
+	left: 0
+	transition: left ease .4s
+/* END transitions */
+
+/* Js realted styling */
+.j-search-top
+	overflow: hidden
+
+	.search
+		background: #fff
+	.logo
+		height: 48px
+		div
+			height: 24px
+			width: 99px
+			margin-left: 20px
+			z-index: 3
+			path
+				fill: #f42
+	.search-btn
+		z-index: 10
+		position: fixed
+		top: 0
+		border-left: none
+
+		&:before, &:after
+			z-index: -1
+			position: absolute
+			left: 24px
+			top: 12px
+			content: ' '
+			height: 20px
+			width: 2px
+			background-color: #333
+		&:before
+			transform: rotate(45deg)
+		&:after
+			transform: rotate(-45deg)
+
+	section.search
+		display: block
+		z-index: 2
+
+
+.j-menu
+	.logo div
+		z-index: 3
+	.hamburger-menu
+		z-index: 3
+		border-left: 0
+		> div
+			background: #fff
+	.main-menu-wrapper
+		z-index: 2
+		left: 0
+/* END Js realted styling */
+
+
+
+@media screen and (max-width: 768px)
+	#headline
+		grid-template-columns: 100%
+		grid-template-rows: auto
+		grid-row-gap: 8px
+		grid-template-areas: "cover1" "cover2" "cover3"
+	.j-menu
+		overflow: hidden
+		.page-wrap
+			left: -30%
+		/* to make the browser unscrollable only in mobile view when the main menu is open */
+/* START OF > 768px*/
+@media screen and (min-width: 768px )
+	.page-wrap
+		padding-top: 80px
+	.top-menu
+		height: 80px
+		.search-btn
+			z-index: 3
+		.main-menu-wrapper
+			left: 106px
+			right: 0
+			width: auto
+			height: 80px
+			padding: 0
+			background: #fff
+			.grid-wrap
+				grid-template-rows: 32px 48px
+				grid-gap: 0
+				grid-template-columns: 1fr
+				grid-template-areas: "top-black" "sections"
+
+			.contact-list, h5
+				display: none
+
+			.sections
+				padding: 0
+				ul
+					display: flex
+					align-items: center
+					height: 100%
+					li
+						color: #999
+						font-weight: 600
+						font-size: 13.6px
+						letter-spacing: 1px
+						text-transform: uppercase
+						margin: 0 6px
+
+			.top-black-wrapper
+				background: #000
+				display: flex
+				flex-direction: row-reverse
+				overflow: hidden
+				flex-wrap: wrap
+				> section
+					flex: 1
+					padding: 0
+					&.about
+						ul
+							justify-content: flex-end
+					ul
+						min-width: 400px
+						display: flex
+						align-items: center
+						height: 32px
+						li
+							margin: 0 4px
+
+		.hamburger-menu
+			display: none
+
+	header.main
+		#headline
+			height: 455px
+			display: grid
+			grid-template-columns: 66% 1fr
+			grid-template-rows: 50% 50%
+			grid-gap: 8px
+			grid-template-areas: "cover1 cover2" "cover1 cover3"
+			
+			> div:first-child
+				.text-wrapper
+					h2
+						font-size: 40px
+			.text-wrapper
+				h2
+					margin-right: 16px
+
+	.grid-max-4
+			display: grid
+			grid-template-columns: 1fr 1fr 1fr
+			grid-template-rows: auto
+			grid-gap: 20px
+
+	.card
+		.card__img
+			float: none
+			width: 100%
+			height: 0
+			padding-top: 50%
+			margin-bottom: 10px
+
+		.card__content
+			margin: 0
+			height: auto
+	.grid-max-3
+		display: grid
+		grid-template-columns: 1fr 1fr
+		grid-gap: 20px
+	#funding
+		.header-link-list
+			display: flex
+			margin-top: 10px
+			li
+				margin: 0
+				font-size: 16px
+				&:nth-child(2)
+					position: relative
+					margin: 0 20px
+					&::before, &::after
+						content: ''
+						display: block
+						height: 16px
+						width: 2px
+						background-color: #f42
+						position: absolute
+						top: 0
+					&::before
+						left: -10px
+					&::after
+						right: -10px
+	.investment
+		.about
+			span
+				font-size: 12px
+				line-height: 20px
+
+	#deals
+		.card
+			.card__img
+				padding-top: 75%
+			overflow: hidden
+			position: relative
+			.discount-banner
+				display: block
+				position: absolute
+				top: -75px
+				right: -100px
+				width: 200px
+				padding: 120px 0 6px
+				text-align: center
+				background: yellow
+				transform: rotate(45deg)
+				
+	/* END OF > 768px*/
+
+/* START OF > 857px*/
+
+@media screen and (min-width: 857px)
+	header.main
+		#headline
+			height: 505px
+
+			> div:first-child
+				.text-wrapper
+					h2
+						font-size: 40px
+						line-height: 1.1em
+			.text-wrapper
+				h2
+					font-size: 20px
+	#funding
+		header
+			position: relative
+			.header-link-list
+				position: absolute
+				bottom: 0
+				right: 0
+				li
+					font-size: 18px
+
+
+/* End OF > 857px*/
+
+/* START OF > 1024px*/
+
+@media screen and (min-width: 1024px)
+	.top-menu
+		z-index: 1
+		position: absolute
+		.logo
+			box-sizing: border-box
+			width: 66%
+			right: 340px
+			padding-right: 10px
+			height: 560px
+			position: absolute
+			top: 88px
+			left: 8px
+			z-index: 1
+			a
+				background: linear-gradient(335deg, transparent 30%, rgba(255, 68, 34, .7) 80%), linear-gradient(rgba(255, 68, 34, .7) 0%, transparent 30%)
+				div
+					width: 60%
+					height: 0
+					padding-top: 20%
+					box-sizing: border-box
+					max-height: 120px
+					position: absolute
+					top: 20px
+					left: 20px
+					transform: none
+					svg
+						position: absolute
+						top: 0
+						left: 0
+						right: 0
+						height: auto
+
+
+		.main-menu-wrapper
+			left: 0
+			position: absolute
+	header.main
+		z-index: 1
+		#headline
+			> div:first-child
+				.text-wrapper
+					z-index: 5
+					h2
+						font-size: 52px
+			> div
+				.text-wrapper
+					h2
+						font-size: 28px
+
+			height: 552px
+	.grid-max-4
+		grid-template-columns: 1fr 1fr 1fr 1fr
+	.grid-max-3
+		grid-template-columns: 1fr 1fr 1fr
+	.investment
+		> div:last-child
+			display: block
+
+	.j-search-top
+		.logo
+			display: block
+	.card
+		font-size: 18px
+/* END OF > 1024px*/
+/* START OF > 1600px*/
+
+@media screen and (min-width: 1600px)
+	header.main
+		#headline
+			height: 497.6px
+	.top-menu
+		.logo
+			height: 506.6px
+
+			a
+				div
+					padding-top: 96px
+					svg
+						width: auto
+						height: 100%
+
+/* END OF > 1600px*/

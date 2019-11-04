@@ -1,0 +1,79 @@
+.top-menu
+	height: 48px
+	background: #fff
+	z-index: 3
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+
+.main-menu-wrapper, .search
+	position: fixed
+	top: 0
+	width: 100%
+	bottom: 0
+
+.search
+	display: none
+	form
+		max-width: 608px
+		margin: 0 auto
+		margin-top: 48px
+		padding: 30px 20px 0
+		input
+			color: #f42
+			width: 100%
+			font-size: 48px
+			line-height: 56px
+			caret-color: #f42
+			border: 0
+			outline: 0
+			border-bottom: 2px solid #eee
+
+.main-menu-wrapper
+	left: 100%
+
+header.main
+	padding: 8px
+	#headline
+		height: 835px
+		display: grid
+		div:nth-child(1)
+			grid-area: cover1
+		div:nth-child(2)
+			grid-area: cover2
+		div:nth-child(3)
+			grid-area: cover3
+
+#news
+	margin-top: 84px
+	h2
+		margin-bottom: 24px
+.card
+	margin: 6px 0
+	.card__img
+		display: block
+		width: 75px
+		height: 75px
+		float: left
+	.card__content
+		height: 75px
+		margin-left: 88px /* 75px(img) + 18px(padding)*/
+
+#funding
+	header
+		margin-bottom: 24px
+	.investment
+		.investment__card
+			padding: 8px 0
+.investment
+	> div:last-child
+			display: none
+footer
+	height: 283px
+	.contact-info
+		background-color: #131313
+		height: 75%
+	.copyright
+		background-color: #000
+		height: 25%

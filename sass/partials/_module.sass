@@ -1,0 +1,402 @@
+
+.top-menu
+	box-shadow: 0px 10px 100px 0px rgba(0,0,0,0.25)
+	> *
+		height: 100%
+.logo
+	width: 106px
+	a
+		display: block
+		height: 100%
+		position: relative
+		background: linear-gradient(315deg,#F42, #c09)
+		div
+			height: 16px
+			width: 66px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			svg
+				width: 100%
+				height: 100%
+
+.nav-btns
+	height: 48px
+	min-width: 48px
+	position: absolute
+	bottom: 0
+	right: 0
+	display: flex
+	flex-direction: row
+	> div
+		position: relative
+		border-left: 1px solid #eee
+
+		> a
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+
+	.search-btn
+		width: 48px
+		height: 48px
+
+
+.hamburger-menu
+	height: 14px
+	width: 16px
+	padding: 17px 16px
+	div
+		width: 20px
+		height: 2px
+		background-color: #f42
+		margin-left: -2px
+
+	> div:nth-child(3)
+		margin: 4px 0 4px -2px
+.main-menu-wrapper
+	box-sizing: border-box
+	background: linear-gradient(300deg,#F42 20%, #c09 99%)
+	color: #fff
+	padding-top: 48px
+	.grid-wrap
+		height: 100%
+		overflow: auto
+		display: grid
+		grid-template-columns: auto
+		grid-template-rows: 55px auto
+		grid-gap: 30px
+		grid-template-areas: 'contacts contacts' 'sections top-black'
+		section
+			h5
+				font-weight: 600
+				font-size: 14px
+				letter-spacing: 1px
+				margin-bottom: 12px
+			li
+				margin-bottom: 12px
+				color: hsla(0, 0%, 100%, .6)
+
+	.contact-list
+		grid-area: contacts
+		height: 55px
+		border: 1px solid hsla(0, 0%, 100%, .2)
+		border-left: 0
+		border-right: 0
+	.sections
+		grid-area: sections
+		padding-left: 20px
+
+	.about
+		padding-bottom: 30px
+	.top-black-wrappper
+		grid-area: top-black
+
+#headline
+	> div:nth-child(1)
+		background-image: url('img/Untitled-design12-796x417.png')
+	> div:nth-child(2)
+		background-image: url('img/Copy-of-Copy-of-Copy-of-Untitled-Design-2-796x427.png')
+	> div:nth-child(3)
+		background-image: url('img/bitcoin_today-header_bitcoin_today-796x419.jpg')
+
+.cover-with-text
+	position: relative
+	height: 100%
+	background-position: center
+	background-size: cover
+	&::before
+		content: ''
+		background-image: linear-gradient(to top, #000, transparent )
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+	.text-wrapper
+		position: absolute
+		bottom: 0
+		padding: 12px
+		> *
+			color: #fff
+			margin-bottom: 6px
+		h5
+			font-size: 14px
+		h2
+			font-size: 20px
+		span
+			font-size: 12px
+			opacity: .7
+#news
+	.card:first-child
+		.card__img
+			background-image: url('img/Copy-of-Copy-of-Copy-of-Untitled-Design-1-504x270.png')
+	.card:nth-child(2)
+		.card__img
+			background-image: url('img/sale_22648_primary_image_wide-540x270.jpg')
+	.card:nth-child(3)
+		.card__img
+			background-image: url('img/Copy-of-Copy-of-Copy-of-Untitled-Design-504x270.png')
+	.card:nth-child(4)
+		.card__img
+			background-image: url('img/GameClub-516x270.jpg')
+	.card:nth-child(5)
+		.card__img
+			background-image: url('img/Thousands-of-American-companies-could-suffer-from-Trumps-vague-FOSTA-516x270.png')
+	.card:nth-child(6)
+		.card__img
+			background-image: url('img/Caffeine-368x276.jpg')
+	.card:nth-child(7)
+		.card__img
+			background-image: url('img/Nvidia-Shield-hed-368x276.jpg')
+	.card:nth-child(8)
+		.card__img
+			background-image: url('img/spacefoam-2.jpg')
+.card
+		.card__img
+			background-position: center
+			background-size: cover
+		.card__content
+			overflow: hidden
+			h4
+				margin: 0
+				margin-bottom: 6px
+				line-height: 20px
+				font-size: .875em
+			ul
+				color: #aaa
+			li
+				font-size: .75em
+				float: left
+				&:first-child
+					&::after
+						content: '\B7'
+						display: block
+						float: right
+						margin: 0 4px
+#funding
+	header
+		li
+			color: #f42
+			margin-top: 10px
+			font-size: 14px
+.investment__card
+	box-sizing: content-box
+	position: relative
+	.profile__img
+		position: absolute
+		left: 12px // because of parents top padding
+		top: 20px
+		width: 60px
+		height: 60px
+		background-position: center
+		background-size: 100% 100%
+		background-repeat: no-repeat
+
+		& ~ div
+			padding-left: 92px
+.investment__card
+	&:first-child
+		.profile__img
+			background-image: url('img/1e6a8bc1dde57ad2095202046ead9bb5b1d186f3.jpg')
+	&:nth-child(2)
+		.profile__img
+			background-image: url('img/8ea95c8824572f61eeef669cca4f6ff0dc429943.png')
+	&:nth-child(3)
+		.profile__img
+			background-image: url('img/0d3f64ae4ee9d97191e416c2e16de1083f4a5e63.jpg')
+	&:nth-child(4)
+		.profile__img
+			background-image: url('img/b973e1fd0e18458fb2394f5259503cff39733673.jpg')
+
+	.red-bg
+		color: #fff
+		padding-top: 12px
+		padding-bottom: 12px
+		background-color: #f42
+		span
+			font-size: 18px
+			font-weight: 600
+	.price-series
+		padding-top: 12px
+		padding-bottom: 12px
+		background-color: #FCE7E5
+		> *
+			display: block
+		.price
+			font-size: 19px
+			font-family: $header-font
+			margin-bottom: 3px
+		.series
+			font-size: 12px
+			color: #666
+			letter-spacing: .5px
+			font-family: $small-header-font
+	.tags, .about
+		padding: 12px
+		background-color: #FEFAF8
+		color: #666
+	.tags
+		border-bottom: 1px solid #ff442240
+		li
+			padding-left: 24px
+			line-height: 22px
+			font-size: 14px
+	.about
+		span
+			font-size: 14px
+
+.sorted-news
+	.cover-with-text
+		height: 0
+		padding-top: 75%
+.sorted-news
+	> section:first-child
+		.cover-with-text
+			background-image: url('img/facebook-368x276.png')
+		.img-link
+			background-image: url('img/Unlock-count.jpg')
+	> section:nth-child(2)
+		.cover-with-text
+			background-image: url('img/Nvidia-Shield-hed-368x276.jpg')
+		.img-link
+			background-image: url('img/Samsung-Galaxy-Fold-foldable-phone-hed.jpg')
+	> section:nth-child(3)
+		.cover-with-text
+			background-image: url('img/Copy-of-Copy-of-Copy-of-Untitled-Design-2-796x427.png')
+		.img-link
+			background-image: url('img/Copy-of-Copy-of-Copy-of-Untitled-Design-252x135.png')
+	> section:nth-child(4)
+		.cover-with-text
+			background-image: url('img/Giphy-Arcade-368x276.jpg')
+		.img-link
+			background-image: url('img/Annotation-2019-09-19-121214.png')
+	> section:nth-child(5)
+		.cover-with-text
+			background-image: url('img/Untitled-design12-796x417.png')
+		.img-link
+			background-image: url('img/Screenshot-2019-10-24-at-12.01.09.png')
+	> section:nth-child(6)
+		.cover-with-text
+			background-image: url('img/bitcoin_today-header_bitcoin_today-796x419.jpg')
+		.img-link
+			background-image: url('img/spacefoam-2.jpg')
+	> section:nth-child(7)
+		.cover-with-text
+			background-image: url('img/Press-Conference-with-Eric-Esrailian-Alexis-Ohanian-Hakob-Arshakyan-Yervant-Zorian-and-Serj-Tankian-hed-368x276.jpg')
+		.img-link
+			background-image: url('img/Google-Assistant-phone-line.jpg')
+	> section:nth-child(8)
+		.cover-with-text
+			background-image: url('img/Caffeine-368x276.jpg')
+		.img-link
+			background-image: url('img/syndication9-copy.jpg')
+	.latest-slot
+		height: 96px
+		position: relative
+		padding:  16px 96px 16px 16px
+		margin-top: 2px
+		box-sizing: border-box
+		background-color: #ff44220f
+		color: #f42
+		> *
+			margin: 0
+			margin-right: 16px
+			font-size: 15px
+			line-height: 20px
+		.img-link
+			height: 100%
+			width: 96px
+			display: block
+			margin: 0
+			background-position: center
+			background-size: cover
+			position: absolute
+			right: 0
+			top: 0
+	.news-list
+		li
+			padding: 12px 0
+			color: #555
+			font-size: 14px
+			border-bottom: 1px solid #eee
+			position: relative
+			padding-left: 20px
+			&::before
+				content: ''
+				width: 4px
+				height: 4px
+				border-radius: 1px
+				background-color: #f42
+				position: absolute
+				top: 50%
+				left: 0
+				transform: translateY(-50%)
+
+#deals
+	.card:first-child
+		.card__img
+			background-image: url('img/sale_22722_primary_image.jpg')
+	.card:nth-child(2)
+		.card__img
+			background-image: url('img/sale_22542_primary_image.jpg')
+	.card:nth-child(3)
+		.card__img
+			background-image: url('img/sale_21501_primary_image.jpg')
+	.card:nth-child(4)
+		.card__img
+			background-image: url('img/sale_14523_primary_image.jpg')
+	.card:nth-child(5)
+		.card__img
+			background-image: url('img/sale_22719_primary_image.jpg')
+	.card:nth-child(6)
+		.card__img
+			background-image: url('img/sale_19399_primary_image.jpg')
+	.card:nth-child(7)
+		.card__img
+			background-image: url('img/sale_22474_primary_image.jpg')
+	.card:nth-child(8)
+		.card__img
+			background-image: url('img/sale_22289_primary_image.jpg')
+	.card
+		h4
+			font-size: 15.4px
+		.old-price
+			text-decoration: line-through
+		.new-price
+			font-size: 14px
+			color: #444
+		.discount-banner
+			display: none
+footer
+	> *
+		color: #aaa
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+	.contact-info
+		> ul
+			display: flex
+			width: 100%
+			justify-content: center
+		.social-media
+			li
+				margin: 0 8px
+			a
+				display: block
+				height: 50px
+				width: 50px
+				background: #333
+				border-radius: 50%
+		.go-to
+			margin-top: 25px
+			li
+				margin: 0 8px
+	.copyright
+		span
+			text-align: center
+			width: 50%
